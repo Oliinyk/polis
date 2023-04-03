@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="travel-insurance">
+
+    <div id="top"></div>
+    <div class="intro__preview-wrapper">
+      <div class="container">
+        <div class="intro__preview">
+          <div class="intro__preview-title">
+            Страхування онлайн
+          </div>
+          <div class="intro__preview-text">
+            Найвигідніші пропозиції на ринку від провідних страхових компаній
+          </div>
+          <div class="intro__preview-phone">
+            тел. 800 000 000
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <a href="#" class="result__table-back">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.38753 11.85L3.53753 6.99999L8.38753 2.14999C8.50325 2.03426 8.59505 1.89687 8.65769 1.74567C8.72032 1.59446 8.75255 1.4324 8.75255 1.26874C8.75255 1.10507 8.72032 0.943013 8.65769 0.791808C8.59505 0.640603 8.50325 0.503214 8.38753 0.387487C8.2718 0.27176 8.13441 0.179959 7.98321 0.117328C7.832 0.0546971 7.66994 0.0224609 7.50628 0.0224609C7.34261 0.0224609 7.18055 0.0546971 7.02935 0.117328C6.87814 0.179959 6.74076 0.27176 6.62503 0.387487L0.887528 6.12499C0.771648 6.24063 0.679714 6.37799 0.616987 6.52921C0.55426 6.68042 0.521973 6.84253 0.521973 7.00624C0.521973 7.16995 0.55426 7.33205 0.616987 7.48327C0.679714 7.63448 0.771648 7.77184 0.887528 7.88749L6.62503 13.625C7.11253 14.1125 7.90003 14.1125 8.38753 13.625C8.86253 13.1375 8.87503 12.3375 8.38753 11.85Z" fill="#488FE1"/>
+          </svg>
+          Повернутись
+        </a>
+
+        <div class="result__travel-insurance">
+          <div class="total__direct-trips total__col">
+            <a href="#" class="total__preview-logo" style="background-image: url(images/flag.png);"></a>
+            <div>
+              <p class="result__title">Напрямок поїздки:</p>
+              <p class="result__subtitle">Австралія</p>
+            </div>
+          </div>
+          <div class="total__travel-period total__col">
+            <div class="result__title">Період поїздки:</div>
+            <div class="">05.07.2022 - 06.07.2022 (2 дні)</div>
+          </div>
+          <div class="total__tourist total__col">
+            <div class="result__title">Турист:</div>
+            <div class="">36 років</div>
+          </div>
+          <div class="total__activity total__col">
+            <div class="result__title">Активності:</div>
+            <div class="">Немає</div>
+          </div>
+          <a href="#" class="total__pricing-btn editBtnJs">Редагувати</a>
+        </div>
+
+        <!-- inner__wrap -->
+        <div class="inner__wrap">
+          <div class="filter-modal-wrap filterModalWrapJs">
+            <div class="filter-sidebar filterModalJs">
+              <h4 class="filter-title">Туристична страховка</h4>
+              <form>
+                <div class="checkbox-group">
+                  <h4>Страхова сумма</h4>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">Всі варіанти</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">10 000 €</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3">20 000 €</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4">30 000 €</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox5">
+                    <label for="checkbox5">50 000 €</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox6">
+                    <label for="checkbox6">75 000 €</label>
+                  </div>
+                </div>
+
+                <div class="checkbox-group">
+                  <h4>Активності</h4>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox7">
+                    <label for="checkbox7">Без активностей</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8">Активний відпочинок</label>
+                  </div>
+                </div>
+
+                <div class="checkbox-group">
+                  <h4>Додатково</h4>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox9">
+                    <label for="checkbox9">Всі варіанти</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox10">
+                    <label for="checkbox10">Нещасний випадок</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox11">
+                    <label for="checkbox11">Цивільно-правова відповідальність перед третіми особами</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox12">
+                    <label for="checkbox12">Відшкодування витрат при втраті багажу</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox13">
+                    <label for="checkbox13">Неможливість поїздки</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox14">
+                    <label for="checkbox14">Неотримання візи</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox15">
+                    <label for="checkbox15">Фінансові ризики під час поїздки</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox16">
+                    <label for="checkbox16">Добровільне медичне страхування</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox17">
+                    <label for="checkbox17">Затримка авіарейсу</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox18">
+                    <label for="checkbox18">Страхування майна</label>
+                  </div>
+                </div>
+                <button type="submit" class="filtr-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 5.00001C8.73478 5.00001 8.48043 5.10537 8.29289 5.2929C8.10536 5.48044 8 5.73479 8 6.00001C8 6.26523 8.10536 6.51958 8.29289 6.70712C8.48043 6.89465 8.73478 7.00001 9 7.00001C9.26522 7.00001 9.51957 6.89465 9.70711 6.70712C9.89464 6.51958 10 6.26523 10 6.00001C10 5.73479 9.89464 5.48044 9.70711 5.2929C9.51957 5.10537 9.26522 5.00001 9 5.00001ZM6.17 5.00001C6.3766 4.41448 6.75974 3.90744 7.2666 3.5488C7.77346 3.19015 8.37909 2.99756 9 2.99756C9.62091 2.99756 10.2265 3.19015 10.7334 3.5488C11.2403 3.90744 11.6234 4.41448 11.83 5.00001H19C19.2652 5.00001 19.5196 5.10537 19.7071 5.2929C19.8946 5.48044 20 5.73479 20 6.00001C20 6.26523 19.8946 6.51958 19.7071 6.70712C19.5196 6.89465 19.2652 7.00001 19 7.00001H11.83C11.6234 7.58554 11.2403 8.09258 10.7334 8.45122C10.2265 8.80986 9.62091 9.00246 9 9.00246C8.37909 9.00246 7.77346 8.80986 7.2666 8.45122C6.75974 8.09258 6.3766 7.58554 6.17 7.00001H5C4.73478 7.00001 4.48043 6.89465 4.29289 6.70712C4.10536 6.51958 4 6.26523 4 6.00001C4 5.73479 4.10536 5.48044 4.29289 5.2929C4.48043 5.10537 4.73478 5.00001 5 5.00001H6.17ZM15 11C14.7348 11 14.4804 11.1054 14.2929 11.2929C14.1054 11.4804 14 11.7348 14 12C14 12.2652 14.1054 12.5196 14.2929 12.7071C14.4804 12.8947 14.7348 13 15 13C15.2652 13 15.5196 12.8947 15.7071 12.7071C15.8946 12.5196 16 12.2652 16 12C16 11.7348 15.8946 11.4804 15.7071 11.2929C15.5196 11.1054 15.2652 11 15 11ZM12.17 11C12.3766 10.4145 12.7597 9.90744 13.2666 9.5488C13.7735 9.19015 14.3791 8.99756 15 8.99756C15.6209 8.99756 16.2265 9.19015 16.7334 9.5488C17.2403 9.90744 17.6234 10.4145 17.83 11H19C19.2652 11 19.5196 11.1054 19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071C19.5196 12.8947 19.2652 13 19 13H17.83C17.6234 13.5855 17.2403 14.0926 16.7334 14.4512C16.2265 14.8099 15.6209 15.0025 15 15.0025C14.3791 15.0025 13.7735 14.8099 13.2666 14.4512C12.7597 14.0926 12.3766 13.5855 12.17 13H5C4.73478 13 4.48043 12.8947 4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929C4.48043 11.1054 4.73478 11 5 11H12.17ZM9 17C8.73478 17 8.48043 17.1054 8.29289 17.2929C8.10536 17.4804 8 17.7348 8 18C8 18.2652 8.10536 18.5196 8.29289 18.7071C8.48043 18.8947 8.73478 19 9 19C9.26522 19 9.51957 18.8947 9.70711 18.7071C9.89464 18.5196 10 18.2652 10 18C10 17.7348 9.89464 17.4804 9.70711 17.2929C9.51957 17.1054 9.26522 17 9 17ZM6.17 17C6.3766 16.4145 6.75974 15.9074 7.2666 15.5488C7.77346 15.1902 8.37909 14.9976 9 14.9976C9.62091 14.9976 10.2265 15.1902 10.7334 15.5488C11.2403 15.9074 11.6234 16.4145 11.83 17H19C19.2652 17 19.5196 17.1054 19.7071 17.2929C19.8946 17.4804 20 17.7348 20 18C20 18.2652 19.8946 18.5196 19.7071 18.7071C19.5196 18.8947 19.2652 19 19 19H11.83C11.6234 19.5855 11.2403 20.0926 10.7334 20.4512C10.2265 20.8099 9.62091 21.0025 9 21.0025C8.37909 21.0025 7.77346 20.8099 7.2666 20.4512C6.75974 20.0926 6.3766 19.5855 6.17 19H5C4.73478 19 4.48043 18.8947 4.29289 18.7071C4.10536 18.5196 4 18.2652 4 18C4 17.7348 4.10536 17.4804 4.29289 17.2929C4.48043 17.1054 4.73478 17 5 17H6.17Z" fill="white"></path>
+                  </svg>                
+                  Застосувати
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="total__inner">
+            <div class="total__top">
+              <div class="total__quality">
+                Перелік пропозицій (2)
+              </div>
+              <div class="total__filter">
+                <button type="button" class="active">
+                  <span>Назва</span>
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4H13V6H3V4ZM0 0H16V2H0V0ZM6 8H10V10H6V8Z" fill="#000"/>
+                  </svg>
+                </button>
+                <button type="button">
+                  <span>Рейтинг</span>
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4H13V6H3V4ZM0 0H16V2H0V0ZM6 8H10V10H6V8Z" fill="#000"/>
+                  </svg>
+                </button>
+                <button type="button">
+                  <span>Ціна</span>
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4H13V6H3V4ZM0 0H16V2H0V0ZM6 8H10V10H6V8Z" fill="#000"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="total__items">
+              <div class="total__item">
+                <div class="total__preview">
+                  <a href="#" class="total__preview-logo" style="background-image: url(images/oberig.png);"></a>
+
+                  <div class="total__choice-btns">
+                    <div class="total__choice-btn active">Econom</div>
+                    <div class="total__choice-btn">Standart</div>
+                    <div class="total__choice-btn">Elite</div>
+                  </div>
+
+                  <p class="total__description">Страхова сума <span class="bold">50 000 $</span></p>
+                </div>
+                <div class="total__choice">
+                  <ul class="custom-list">
+                    <li>Франшиза 100 USD/EUR</li>
+                    <li>Дозволено оформлення за кордоном</li>
+                    <li>Невідкладна медична допомога</li>
+                  </ul>
+                  <a href="#" class="more-btn">
+                    Всього 9 опцій
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.612473 11.85L5.46247 6.99999L0.612473 2.14999C0.496746 2.03426 0.404946 1.89687 0.342315 1.74567C0.279683 1.59446 0.247447 1.4324 0.247447 1.26874C0.247447 1.10507 0.279683 0.943013 0.342315 0.791808C0.404946 0.640603 0.496746 0.503214 0.612473 0.387487C0.7282 0.27176 0.865589 0.179959 1.01679 0.117328C1.168 0.0546971 1.33006 0.0224609 1.49372 0.0224609C1.65739 0.0224609 1.81945 0.0546971 1.97065 0.117328C2.12186 0.179959 2.25924 0.27176 2.37497 0.387487L8.11247 6.12499C8.22835 6.24063 8.32029 6.37799 8.38301 6.52921C8.44574 6.68042 8.47803 6.84253 8.47803 7.00624C8.47803 7.16995 8.44574 7.33205 8.38301 7.48327C8.32029 7.63448 8.22835 7.77184 8.11247 7.88749L2.37497 13.625C1.88747 14.1125 1.09997 14.1125 0.612473 13.625C0.137473 13.1375 0.124973 12.3375 0.612473 11.85Z" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="total__pricing">
+                  <div class="total__pricing-qual">
+                    124 грн.
+                  </div>
+                  <a href="#" class="total__pricing-btn buyBtnJs">Купити</a>
+                </div>
+              </div>
+              <div class="total__item">
+                <div class="total__preview">
+                  <a href="#" class="total__preview-logo" style="background-image: url(images/one-click.png);"></a>
+
+                  <div class="total__choice-btns">
+                    <div class="total__choice-btn active">Econom</div>
+                    <div class="total__choice-btn">Standart</div>
+                    <div class="total__choice-btn">Elite</div>
+                  </div>
+
+                  <p class="total__description">Страхова сума <span class="bold">50 000 $</span></p>
+                </div>
+                <div class="total__choice">
+                  <ul class="custom-list">
+                    <li>Франшиза 100 USD/EUR</li>
+                    <li>Дозволено оформлення за кордоном</li>
+                    <li>Невідкладна медична допомога</li>
+                  </ul>
+                  <a href="#" class="more-btn">
+                    Всього 9 опцій
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.612473 11.85L5.46247 6.99999L0.612473 2.14999C0.496746 2.03426 0.404946 1.89687 0.342315 1.74567C0.279683 1.59446 0.247447 1.4324 0.247447 1.26874C0.247447 1.10507 0.279683 0.943013 0.342315 0.791808C0.404946 0.640603 0.496746 0.503214 0.612473 0.387487C0.7282 0.27176 0.865589 0.179959 1.01679 0.117328C1.168 0.0546971 1.33006 0.0224609 1.49372 0.0224609C1.65739 0.0224609 1.81945 0.0546971 1.97065 0.117328C2.12186 0.179959 2.25924 0.27176 2.37497 0.387487L8.11247 6.12499C8.22835 6.24063 8.32029 6.37799 8.38301 6.52921C8.44574 6.68042 8.47803 6.84253 8.47803 7.00624C8.47803 7.16995 8.44574 7.33205 8.38301 7.48327C8.32029 7.63448 8.22835 7.77184 8.11247 7.88749L2.37497 13.625C1.88747 14.1125 1.09997 14.1125 0.612473 13.625C0.137473 13.1375 0.124973 12.3375 0.612473 11.85Z" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="total__pricing">
+                  <div class="total__pricing-qual">
+                    111 грн.
+                  </div>
+                  <a href="#" class="total__pricing-btn">Купити</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="filtr-btn filterBtnJs">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5.00001C8.73478 5.00001 8.48043 5.10537 8.29289 5.2929C8.10536 5.48044 8 5.73479 8 6.00001C8 6.26523 8.10536 6.51958 8.29289 6.70712C8.48043 6.89465 8.73478 7.00001 9 7.00001C9.26522 7.00001 9.51957 6.89465 9.70711 6.70712C9.89464 6.51958 10 6.26523 10 6.00001C10 5.73479 9.89464 5.48044 9.70711 5.2929C9.51957 5.10537 9.26522 5.00001 9 5.00001ZM6.17 5.00001C6.3766 4.41448 6.75974 3.90744 7.2666 3.5488C7.77346 3.19015 8.37909 2.99756 9 2.99756C9.62091 2.99756 10.2265 3.19015 10.7334 3.5488C11.2403 3.90744 11.6234 4.41448 11.83 5.00001H19C19.2652 5.00001 19.5196 5.10537 19.7071 5.2929C19.8946 5.48044 20 5.73479 20 6.00001C20 6.26523 19.8946 6.51958 19.7071 6.70712C19.5196 6.89465 19.2652 7.00001 19 7.00001H11.83C11.6234 7.58554 11.2403 8.09258 10.7334 8.45122C10.2265 8.80986 9.62091 9.00246 9 9.00246C8.37909 9.00246 7.77346 8.80986 7.2666 8.45122C6.75974 8.09258 6.3766 7.58554 6.17 7.00001H5C4.73478 7.00001 4.48043 6.89465 4.29289 6.70712C4.10536 6.51958 4 6.26523 4 6.00001C4 5.73479 4.10536 5.48044 4.29289 5.2929C4.48043 5.10537 4.73478 5.00001 5 5.00001H6.17ZM15 11C14.7348 11 14.4804 11.1054 14.2929 11.2929C14.1054 11.4804 14 11.7348 14 12C14 12.2652 14.1054 12.5196 14.2929 12.7071C14.4804 12.8947 14.7348 13 15 13C15.2652 13 15.5196 12.8947 15.7071 12.7071C15.8946 12.5196 16 12.2652 16 12C16 11.7348 15.8946 11.4804 15.7071 11.2929C15.5196 11.1054 15.2652 11 15 11ZM12.17 11C12.3766 10.4145 12.7597 9.90744 13.2666 9.5488C13.7735 9.19015 14.3791 8.99756 15 8.99756C15.6209 8.99756 16.2265 9.19015 16.7334 9.5488C17.2403 9.90744 17.6234 10.4145 17.83 11H19C19.2652 11 19.5196 11.1054 19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071C19.5196 12.8947 19.2652 13 19 13H17.83C17.6234 13.5855 17.2403 14.0926 16.7334 14.4512C16.2265 14.8099 15.6209 15.0025 15 15.0025C14.3791 15.0025 13.7735 14.8099 13.2666 14.4512C12.7597 14.0926 12.3766 13.5855 12.17 13H5C4.73478 13 4.48043 12.8947 4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929C4.48043 11.1054 4.73478 11 5 11H12.17ZM9 17C8.73478 17 8.48043 17.1054 8.29289 17.2929C8.10536 17.4804 8 17.7348 8 18C8 18.2652 8.10536 18.5196 8.29289 18.7071C8.48043 18.8947 8.73478 19 9 19C9.26522 19 9.51957 18.8947 9.70711 18.7071C9.89464 18.5196 10 18.2652 10 18C10 17.7348 9.89464 17.4804 9.70711 17.2929C9.51957 17.1054 9.26522 17 9 17ZM6.17 17C6.3766 16.4145 6.75974 15.9074 7.2666 15.5488C7.77346 15.1902 8.37909 14.9976 9 14.9976C9.62091 14.9976 10.2265 15.1902 10.7334 15.5488C11.2403 15.9074 11.6234 16.4145 11.83 17H19C19.2652 17 19.5196 17.1054 19.7071 17.2929C19.8946 17.4804 20 17.7348 20 18C20 18.2652 19.8946 18.5196 19.7071 18.7071C19.5196 18.8947 19.2652 19 19 19H11.83C11.6234 19.5855 11.2403 20.0926 10.7334 20.4512C10.2265 20.8099 9.62091 21.0025 9 21.0025C8.37909 21.0025 7.77346 20.8099 7.2666 20.4512C6.75974 20.0926 6.3766 19.5855 6.17 19H5C4.73478 19 4.48043 18.8947 4.29289 18.7071C4.10536 18.5196 4 18.2652 4 18C4 17.7348 4.10536 17.4804 4.29289 17.2929C4.48043 17.1054 4.73478 17 5 17H6.17Z" fill="white"/>
+              </svg>                
+              Фільтр
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__copy">
+          © 2020 Страхування онлайн
+        </div>
+        <a href="javascript://0" onclick="slowScroll ('#top')" class="footer__top">
+          <img src="images/arrow-top.svg" alt="">
+        </a>
+        <div class="footer__pay">
+          <a href="#">
+            <img src="images/visa.png" alt="">
+          </a>
+          <a href="#">
+            <img src="images/mastercard.png" alt="">
+          </a>
+          <a href="#">
+            <img src="images/apple.png" alt="">
+          </a>
+          <a href="#">
+            <img src="images/google.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Modal Edit -->
+	<div class="modal-wrap editModalWrapJs">
+		<div class="modal-edit editModalJs">
+			<h3 class="modal__title">Вказати види активного відпочинку:</h3>
+      <button type="button" class="modal__close-btn closeBtnJs">
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L40 40" stroke="black" stroke-width="2" stroke-linecap="round"/>
+          <path d="M40 1L1 40" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+			<form class="modal_form" action="">
+        <div class="checkbox-group">
+          <h4 class="checkbox-group-title">Зимові активності</h4>
+          <div class="checkbox-group-row">
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox1-1">
+              <label for="checkbox1-1">Гірські лижи / Сноуборд</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox1-2">
+              <label for="checkbox1-2">Снігохід</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox1-3">
+              <label for="checkbox1-3">Бобслей і санний спорт</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox1-4">
+              <label for="checkbox1-4">Хокей</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox1-5">
+              <label for="checkbox1-5">Фігурне катання</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox1-6">
+              <label for="checkbox1-6">Бігові лижі</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox1-7">
+              <label for="checkbox1-7">Інші зимові види спорту</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <h4 class="checkbox-group-title">Водні активності</h4>
+          <div class="checkbox-group-row">
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-1">
+              <label for="checkbox2-1">Віндсерфінг / серфінг / кайт / і ін.</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-2">
+              <label for="checkbox2-2">Вітрильний спорт</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-3">
+              <label for="checkbox2-3">Яхтинг</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-4">
+              <label for="checkbox2-4">Гребля (байдарки, каное, каяки і тд.)</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-5">
+              <label for="checkbox2-5">Водні атракціони (аквапарк, банан, ватрушка, катамаран і тд .)</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-6">
+              <label for="checkbox2-6">Плавання</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-7">
+              <label for="checkbox2-7">Рафтинг</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-8">
+              <label for="checkbox2-8">Участь в регатах</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-9">
+              <label for="checkbox2-9">Воднолижний спорт і вейкборд</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-10">
+              <label for="checkbox2-10">Дайвінг/снорклинг</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox2-11">
+              <label for="checkbox2-11">Водне поло</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <h4 class="checkbox-group-title">Фітнес і спорт</h4>
+          <div class="checkbox-group-row">
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-1">
+              <label for="checkbox3-1">Баскетбол / волейбол / футбол</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-2">
+              <label for="checkbox3-2">Ролики/ковзани</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-3">
+              <label for="checkbox3-3">Пляжний спорт (футбол / волейбол і тд.)</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-4">
+              <label for="checkbox3-4">Бодібілдинг</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-5">
+              <label for="checkbox3-5">Велосипедні прогулянки</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-6">
+              <label for="checkbox3-6">Екскурсійне катання на тваринах</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-7">
+              <label for="checkbox3-7">Фітнес/йога/пілатес</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-8">
+              <label for="checkbox3-8">Триатлон</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-9">
+              <label for="checkbox3-9">Важка атлетика</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-10">
+              <label for="checkbox3-10">Теніс</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-11">
+              <label for="checkbox3-11">Гольф</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-12">
+              <label for="checkbox3-12">Біг</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox3-13">
+              <label for="checkbox3-13">Фехтування</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <h4 class="checkbox-group-title">Екстремальний спорт</h4>
+          <div class="checkbox-group-row border-none">
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox4-1">
+              <label for="checkbox4-1">Авто-мото спорт</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox4-2">
+              <label for="checkbox4-2">Пріжкі з парашутом і ін.</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox4-3">
+              <label for="checkbox4-3">Мисливство та рибалка</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox4-4">
+              <label for="checkbox4-4">Єдиноборства</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox4-5">
+              <label for="checkbox4-5">Пляжний спорт (футбол / волейбол і тд.)</label>
+            </div>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="checkbox4-6">
+              <label for="checkbox4-6">Інше</label>
+            </div>
+          </div>
+        </div>
+
+				<button class="modal_sub_btn modalBtnJs" type="button">Застосувати</button>
+			</form>
+		</div>
+	</div>
+  <div class="modal-bg modalBgEditJs"></div>
+
+
+  <!-- Modal Buy -->
+	<div class="modal-wrap buyModalWrapJs">
+		<div class="modal-edit buyModalJs">
+			<h3 class="modal__title">Туристична страховка ОБЕРІГ</h3>
+      <button type="button" class="modal__close-btn closeBtnJs">
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L40 40" stroke="black" stroke-width="2" stroke-linecap="round"/>
+          <path d="M40 1L1 40" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+	</div>
+  <div class="modal-bg modalBgBuyJs"></div>
+
+  <div class="modal-bg modalBgFilterJs"></div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
