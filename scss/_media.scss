@@ -162,7 +162,6 @@
     text-align: center;
     margin-bottom: 100px;
   }
-
   .result__travel-insurance {
     flex-direction: column;
     text-align: center;
@@ -205,6 +204,16 @@
       background: #2F80ED;
       margin-top: 40px;
     }
+  }
+  .modal-buy-inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .modal-buy .moda-table table {
+    width: 100%;
+  }
+  .modal-buy-item-col {
+    padding: 40px 0 0 0;
   }
 }
 @media (max-width: 850px){
@@ -322,6 +331,35 @@
   }
   .modal-edit .checkbox-group-row .custom-checkbox {
     width: 50%;
+  }
+  .modal-buy {
+    padding: 27px 15px 40px;
+  }
+  .modal-buy .modal__title {
+    font-size: 22px;
+    margin: 40px 0 20px;
+  }
+  .modal-buy .table {
+    display: none;
+  }
+  .mobile-table {
+    display: block;
+  }
+  .modal-buy {
+    .table-footer {
+      .price {
+        font-size: 22px;
+        padding: 25px 0 15px;
+        text-align: center;
+      }
+      .total__pricing-btn {
+        max-width: 200px;
+        height: 42px;
+      }
+    }
+  }
+  .modal-buy-item-col {
+    padding: 0;
   }
 }
 @media (max-width: 750px){
