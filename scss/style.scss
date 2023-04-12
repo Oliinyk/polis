@@ -1253,25 +1253,24 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   margin-top: 10px;
 }
 .total__time-name{
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   color: #6D7885;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 .total__time-qual{
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
+  font-weight: 700;
+  font-size: 14px;
 }
 .total__pricing-qual{
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   line-height: 28px;
   text-align: center;
   margin-bottom: 18px;
 }
 .total__pricing-btn{
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
@@ -1620,6 +1619,7 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
 }
 .result__table-inner .form-callback p {
   font-size: 18px;
+  line-height: 1.2;
   color: #fff;
   font-weight: 700;
   padding-right: 5px;
@@ -1630,11 +1630,12 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
 }
 .result__table-inner .form-callback input {
   background-color: #FBFDFF;
-    border: 0;
-    height: 50px;
-    width: 260px;
-    padding-left: 10px;
-    padding-right: 50px;
+  border: 0;
+  border-radius: 7px;
+  height: 50px;
+  width: 260px;
+  padding-left: 10px;
+  padding-right: 50px;
 }
 .result__table-inner .form-callback .sub_btn {
   position: absolute;
@@ -2300,6 +2301,31 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
     font-size: 18px;
   }
 }
-
+//
+.total__transport__label,
+.total__region__label,
+.total__period__label,
+.total__transport__val,
+.total__region__val,
+.total__period__val {
+  font-size: 14px;
+  color: #172B39;
+}
+.total__item-сashback {
+  align-items: center;
+  padding: 20px 30px;
+}
+.total__pricing-сashback {
+  background: #FEF200;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  max-width: 191px;
+  margin: 10px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
 
 @import 'media';
