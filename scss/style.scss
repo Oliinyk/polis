@@ -285,7 +285,23 @@
         fill: #2F80ED;
       }
     }
+    .bus-ico {
+      path{
+        fill: none;
+        stroke: #2F80ED;
+      }
+    }
   }
+}
+.search--right__item-title {
+  margin-bottom: 10px;
+  width: 202px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
 }
 .tab-item__search--right{
   padding: 17px 20px 38px;
@@ -302,13 +318,17 @@
   font-weight: 700;
 }
 .right__item-text{
-  text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   width: 130px;
   span{
     font-weight: 700;
   }
+}
+.right__item-img {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 .search--right__form{
   display: flex;
@@ -732,7 +752,7 @@ margin-bottom: 30px;
   }
 }
 .advantages{
-  margin-top: 260px;
+  margin-top: 350px;
 }
 .advantages__inner{
   display: flex;
@@ -974,10 +994,52 @@ margin-bottom: 30px;
 .slick-dots li.slick-active button {
   background: #2F80ED;
 }
+.footer {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex: 0 0 auto;
+}
+.footer .container-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
 .footer__inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5C5C5C;
+  margin-bottom: 14px;
+}
+.footer-block li, .footer-block2 li {
+  margin-bottom: 8px;
+}
+.footer-block li, .header-tel a, .footer-block2 a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #242424;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+.footer-block3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer-block3 li {
+  margin: 0 10px 0 0;
 }
 .footer__pay{
   display: flex;
