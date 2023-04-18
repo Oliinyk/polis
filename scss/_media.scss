@@ -287,7 +287,10 @@
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
-}
+  }
+  .footer-block3 {
+    margin-top: 0;
+  }
 }
 @media (max-width: 850px){
   .total__preview-rate img:nth-child(1){
@@ -596,9 +599,6 @@
   .total__items {
     margin-bottom: 40px;
   }
-  .better-price {
-    margin-bottom: 10px;
-  }
   .accordion-item__form-btn {
     width: 100%;
   }
@@ -697,6 +697,32 @@
     .total__choice-btns{
       gap: 0.5rem;
     }
+  }
+  .better-price {
+    left: 10px;
+  }
+  .better-price-ico {
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .better-price .tooltip {
+    top: 7px;
+  }
+  .better-price:hover .tooltip {
+    left: 75px;
+  }
+  .call-nav {
+    bottom: 40px;
+    right: 30px;
+  }
+  .call-nav .call-btn {
+    height: 54px;
+    width: 54px;
+  }
+  .call-nav .call-btn svg {
+    max-width: 26px;
   }
 }
 @media (max-width: 420px){

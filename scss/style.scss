@@ -1005,17 +1005,33 @@ margin-bottom: 30px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.footer__inner{
+.footer__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
+footer > div > div:nth-child(2) > ul > li:nth-child(1) {
   display: block;
   font-size: 16px;
   line-height: 24px;
   color: #5C5C5C;
   margin-bottom: 14px;
+}
+.footer {
+  .footer-block {
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 18px;
+      color: #000;
+      margin-bottom: 30px;
+    }
+  }
+  .footer-block2 {
+    .m-0 {
+      margin-bottom: 0;
+    }
+  }
 }
 .footer-block li, .footer-block2 li {
   margin-bottom: 8px;
@@ -1030,16 +1046,19 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   margin-bottom: 8px;
   line-height: 1;
 }
-.footer-block3 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.footer-block3 li {
-  margin: 0 10px 0 0;
+.footer-block3 {
+  margin-top: 50px;
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  li {
+    margin: 0 10px 0 0;
+  }
 }
 .footer__pay{
   display: flex;
@@ -1578,19 +1597,6 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
 .img-fluid {
   max-width: 100%;
 }
-@media (max-width: 480px) {
-  .call-nav {
-    bottom: 40px;
-    right: 30px;
-  }
-  .call-nav .call-btn {
-    height: 54px;
-    width: 54px;
-  }
-  .call-nav .call-btn svg {
-    max-width: 26px;
-  }
-}
 .result__table-back {
   width: 100%;
 }
@@ -1679,10 +1685,11 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
 }
 // tooltip
 .better-price {
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  bottom: 25px;
+  left: 30px;
+  z-index: 97;
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  margin-bottom: 30px;
 }
 .better-price-ico {
   border: 0;
@@ -1707,6 +1714,7 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   pointer-events: none;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 115px;
 }
 .better-price:hover .tooltip{
   left: 90px;
