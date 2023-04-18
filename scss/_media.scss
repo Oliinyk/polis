@@ -1,4 +1,4 @@
-@media (max-width: 1200px){
+@media (max-width: 1199px){
   .rashet__choice-item{
     margin-left: 5px;
     margin-right: 5px;
@@ -130,6 +130,63 @@
   .accordion-item__form-btn {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .policy-tourist .result__table-inner, .policy-registration .result__table-inner {
+    flex-wrap: wrap;
+  }
+  .policy-tourist .result__table-col, 
+  .policy-registration .result__table-col {
+    margin-right: 0;
+    width: 100%;
+  }
+  .policy-tourist .result__table-inner .form-callback, .policy-registration .result__table-inner .form-callback {
+    max-width: 100%;
+  }
+  .registration__item form {
+    flex-wrap: wrap;
+  }
+  .registration__item .form-row {
+    flex-wrap: wrap;
+    &+.form-row {
+      margin-top: 15px;
+    }
+  }
+  .registration__item.personal-item .form-group {
+    width: 345px;
+  }
+  .registration__caption {
+    flex-wrap: wrap;
+  }
+  .registration .tabs__caption {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .registration__caption li {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  .registration__item.address-item .form-group:nth-child(1),
+  .registration__item.address-item .form-group:nth-child(2),
+  .registration__item.address-item .form-group:nth-child(3),
+  .registration__item.address-item .form-group:nth-child(4) {
+    width: 345px;
+  }
+  .registration__item.address-item .form-group {
+    margin-bottom: 15px;
+  }
+  .registration__item.vehicle-item .form-group:nth-child(1),
+  .registration__item.vehicle-item .form-group:nth-child(2),
+  .registration__item.vehicle-item .form-group:nth-child(3),
+  .registration__item.vehicle-item .form-group:nth-child(4),
+  .registration__item.vehicle-item .form-group:nth-child(5),
+  .registration__item.vehicle-item .form-group:nth-child(6) {
+    width: 345px;
+  }
+  .registration__item.vehicle-item .form-group {
+    margin-bottom: 15px;
+  }
+  .policy-tourist .tourist-col {
+    width: calc(33% - 15px);
   }
 }
 @media (max-width: 1050px){
@@ -312,10 +369,10 @@
   }
   .insurance {
     margin-top: 0;
+    margin-bottom: 75px;
   }
   .insurance__items {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    margin-bottom: 75px;
   }
   .insurance__item {
     padding: 35px 20px;
@@ -377,6 +434,124 @@
   .modal-buy-item-col {
     padding: 0;
   }
+  .registration__items {
+    margin: 0 0 50px;
+  }
+  .policy-tourist .result__table-inner .form-callback p, .policy-registration .result__table-inner .form-callback p {
+    padding: 0;
+  }
+  .registration__item {
+    .form-group {
+      margin: 0;
+      &+.form-group {
+        margin: 15px 0 0;
+      }
+    }
+  }
+  .registration__item.contact-item .form-group:nth-child(1),
+  .registration__item.contact-item .form-group:nth-child(2) {
+    width: 100%;
+  }
+  .registration__item .form-row,
+  .registration__item.personal-item .form-group {
+    width: 100%;
+  }
+  .registration__item.document-item .form-group:nth-child(1),
+  .registration__item.document-item .form-group:nth-child(2),
+  .registration__item.document-item .form-group:nth-child(3),
+  .registration__item.document-item .form-group:nth-child(4) {
+    width: 100%;
+  }
+  .registration__caption li {
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  .registration__item.address-item .form-group:nth-child(1),
+  .registration__item.address-item .form-group:nth-child(2),
+  .registration__item.address-item .form-group:nth-child(3),
+  .registration__item.address-item .form-group:nth-child(4) {
+    width: 100%;
+  }
+  .registration__item.address-item .form-group {
+    margin-bottom: 0;
+  }
+  .registration__caption {
+    margin-bottom: 20px;
+  }
+  .hint-txt {
+    display: none;
+  }
+  .hint-txt-mob {
+    display: block;
+    margin: 0 0 15px;
+    width: 100%;
+  }
+  .registration__item.vehicle-item .form-group:nth-child(1),
+  .registration__item.vehicle-item .form-group:nth-child(2),
+  .registration__item.vehicle-item .form-group:nth-child(3),
+  .registration__item.vehicle-item .form-group:nth-child(4),
+  .registration__item.vehicle-item .form-group:nth-child(5),
+  .registration__item.vehicle-item .form-group:nth-child(6) {
+    width: 100%;
+  }
+  .registration__item.vehicle-item .form-group {
+    margin-bottom: 0;
+  }
+  .registration .paid-item {
+    flex-wrap: wrap;
+  }
+  .registration .paid-item .custom-checkbox,
+  .registration .paid-item .pricing-date-col,
+  .registration .paid-item .pricing-button-col {
+    width: 100%;
+    padding: 0;
+  }
+  .registration .paid-item .pricing-date-col,
+  .registration .paid-item .pricing-button-col {
+    margin-top: 25px;
+  }
+  .policy-tourist .tourist-first-item {
+    flex-wrap: wrap;
+  }
+  .policy-tourist .tourist-col {
+    width: 100%;
+    &+.tourist-col {
+      margin-top: 40px;
+    }
+  }
+  .policy-tourist .result__table-block {
+    padding: 20px 20px 30px;
+  }
+  .policy-tourist .tourist-col .hint-txt-mob {
+    margin: 10px 0 0;
+  }
+  .policy-tourist .total__pricing {
+    justify-content: center;
+  }
+  .policy-tourist .total__choice {
+    width: 100%;
+  }
+  .policy-tourist .total__choice-item span {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .result__table-inner .form-callback {
+    flex-wrap: wrap;
+  }
+  .result__table-inner .form-callback p {
+    padding: 0 0 25px;
+    font-size: 17px;
+  }
+  .result__table-inner .form-callback form {
+    width: 100%;
+  }
+  .result__table-inner .form-callback .form-group {
+    width: 100%;
+  }
+  .result__table-inner .form-callback input {
+    width: 100%;
+  }
 }
 @media (max-width: 750px){
   .accordion-item__icon {
@@ -387,6 +562,9 @@
   .accordion-item__title{
     padding-right: 70px;
     font-weight: 400;
+  }
+  .registration__quality {
+    font-size: 26px;
   }
 }
 @media (max-width: 650px){
@@ -496,6 +674,13 @@
   .modal-edit .checkbox-group-row {
     border-bottom: 0;
     margin-bottom: 0;
+  }
+  .registration .period-caption {
+    flex-wrap: wrap;
+  }
+  .registration .period-caption .period-date {
+    margin: 15px 0 0;
+    width: 100%;
   }
 }
 @media (max-width: 480px){

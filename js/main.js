@@ -184,6 +184,12 @@ $(function () {
     }
   });
   
+  // tabs
+  $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('.registration__tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  });
 
 });
 
@@ -218,6 +224,7 @@ $('.reviews__items').slick({
     }
   ]
 });
+
 
 // var no_active_delay = 3; // Количество секунд простоя мыши, при котором пользователь считается неактивным
 // var now_no_active = 0; // Текущее количество секунд простоя мыши

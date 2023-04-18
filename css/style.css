@@ -1875,24 +1875,6 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
     padding-right: 25px;
   }
 }
-@media (max-width: 767px) {
-  .result__table-inner .form-callback {
-    flex-wrap: wrap;
-  }
-  .result__table-inner .form-callback p {
-    padding: 0 0 25px;
-    font-size: 17px;
-  }
-  .result__table-inner .form-callback form {
-    width: 100%;
-  }
-  .result__table-inner .form-callback .form-group {
-    width: 100%;
-  }
-  .result__table-inner .form-callback input {
-    width: 100%;
-  }
-}
 .better-price {
   position: relative;
   z-index: 2;
@@ -1965,6 +1947,7 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
 
 .insurance {
   margin-top: 117px;
+  margin-bottom: 175px;
 }
 
 .insurance__items {
@@ -1972,7 +1955,6 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   gap: 2rem;
   justify-content: center;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-bottom: 175px;
 }
 
 .insurance__item {
@@ -2473,13 +2455,91 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   border-right: 0;
 }
 
-.policy-registration .result__table .result__table-block-col {
+.policy-tourist .result__table-block {
+  padding: 20px 20px 10px;
+}
+.policy-tourist .result__franchise {
+  height: 100%;
+  color: #737373;
+}
+.policy-tourist .total__pricing-col {
+  height: 100%;
+}
+.policy-tourist .total__pricing {
+  margin-top: 7px;
+}
+.policy-tourist .tourist-first-item {
+  display: flex;
+  justify-content: space-between;
+}
+.policy-tourist .tourist-col {
+  width: calc(33% - 35px);
+}
+.policy-tourist .tourist-col form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.policy-tourist .tourist-col .form-group {
+  width: 100%;
+  margin: 0 0 10px;
+}
+.policy-tourist .tourist-col .hint-txt {
+  margin: 0;
+}
+.policy-tourist .united-group {
+  display: flex;
+}
+.policy-tourist .p-series-input {
+  width: 80px;
+  margin-right: 10px;
+}
+.policy-tourist .insurance__item {
+  height: max-content;
+}
+.policy-tourist .insurance__item input {
+  border-radius: 6px;
+  margin-bottom: 0;
+}
+.policy-tourist .insurance__item .form-group {
+  margin: 0 0 10px;
+}
+.policy-tourist .insurance__item .pricing-date-col {
+  text-align: center;
+  margin: 30px 0 30px;
+}
+.policy-tourist .insurance__item .pricing-date-col .pricing-title {
+  font-size: 18px;
+}
+.policy-tourist .insurance__item .pricing-button-col {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.policy-tourist .insurance__item .pricing-button-col p {
+  color: #7D8184;
+}
+.policy-tourist .insurance__item .total__pricing-btn {
+  margin-bottom: 15px;
+}
+
+.policy-tourist .result__table-col,
+.policy-registration .result__table-col {
+  align-items: center;
+  display: flex;
   width: auto;
   flex: 1 1 auto;
+  margin-right: 10px;
 }
+.policy-tourist .result__table-col .result__franchise,
+.policy-registration .result__table-col .result__franchise {
+  width: 100%;
+}
+.policy-tourist .result__table-inner,
 .policy-registration .result__table-inner {
   flex-wrap: nowrap;
 }
+.policy-tourist .result__table-inner .form-callback,
 .policy-registration .result__table-inner .form-callback {
   width: 100%;
   max-width: 470px;
@@ -2489,36 +2549,257 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   justify-content: center;
   padding: 15px 20px;
 }
+.policy-tourist .result__table-inner .form-callback form,
 .policy-registration .result__table-inner .form-callback form {
   margin-top: 18px;
   width: 100%;
 }
+.policy-tourist .result__table-inner .form-callback .form-group,
+.policy-tourist .result__table-inner .form-callback input,
 .policy-registration .result__table-inner .form-callback .form-group,
 .policy-registration .result__table-inner .form-callback input {
   width: 100%;
 }
+.policy-tourist .form-callback-title,
+.policy-registration .form-callback-title {
+  width: 100%;
+}
+.policy-tourist .total__preview-logo,
 .policy-registration .total__preview-logo {
   flex: none;
   width: 120px;
 }
+.policy-tourist .total__choice,
 .policy-registration .total__choice {
   display: flex;
   flex-wrap: wrap;
   margin: 0 20px;
+  width: 60%;
 }
+.policy-tourist .total__choice-item,
 .policy-registration .total__choice-item {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+.policy-tourist .total__choice-item span,
 .policy-registration .total__choice-item span {
   margin-bottom: 10px;
 }
-.policy-registration .total__choice__title, .policy-registration .total__choice__ime-qual {
+.policy-tourist .total__choice__title, .policy-tourist .total__choice__ime-qual,
+.policy-registration .total__choice__title,
+.policy-registration .total__choice__ime-qual {
+  color: #000000;
   width: 40%;
 }
+.policy-tourist .result__franchise,
 .policy-registration .result__franchise {
   font-size: 18px;
+}
+.policy-tourist .total__period__label,
+.policy-tourist .total__period__val,
+.policy-registration .total__period__label,
+.policy-registration .total__period__val {
+  font-size: 18px;
+}
+.policy-tourist .total__period__label,
+.policy-registration .total__period__label {
+  margin: 0 0 5px;
+}
+.policy-tourist .total__pricing-label,
+.policy-registration .total__pricing-label {
+  font-size: 18px;
+  color: #737373;
+}
+.policy-tourist .result__franchise .total__pricing-qual,
+.policy-registration .result__franchise .total__pricing-qual {
+  margin: 0 0 0 7px;
+  color: #222;
+}
+.policy-tourist .total__pricing-item,
+.policy-registration .total__pricing-item {
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 7px;
+}
+.policy-tourist .total__pricing,
+.policy-registration .total__pricing {
+  display: flex;
+  align-items: flex-end;
+}
+
+.registration__quality {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.registration__items {
+  margin: 0 0 100px;
+}
+.registration__item {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+}
+.registration__item form {
+  display: flex;
+}
+.registration__item label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 3px;
+}
+.registration__item input {
+  border: 1px solid #D4D5E8;
+  border-radius: 6px;
+  padding: 15px 10px 15px 15px;
+  width: 100%;
+}
+.registration__item .form-row {
+  display: flex;
+}
+.registration__item .form-group {
+  margin: 0 15px 0 0;
+}
+.registration__item.contact-item .form-group:nth-child(1) {
+  width: 330px;
+}
+.registration__item.contact-item .form-group:nth-child(2) {
+  width: 360px;
+}
+.registration__item.personal-item .form-group {
+  width: 220px;
+}
+.registration__item.document-item .form-group:nth-child(1) {
+  width: 100px;
+}
+.registration__item.document-item .form-group:nth-child(2) {
+  width: 160px;
+}
+.registration__item.document-item .form-group:nth-child(3) {
+  width: 160px;
+}
+.registration__item.document-item .form-group:nth-child(4) {
+  width: 280px;
+}
+.registration__item.address-item .form-group:nth-child(1) {
+  width: 220px;
+}
+.registration__item.address-item .form-group:nth-child(2) {
+  width: 220px;
+}
+.registration__item.address-item .form-group:nth-child(3) {
+  width: 140px;
+}
+.registration__item.address-item .form-group:nth-child(4) {
+  width: 140px;
+}
+.registration__item.vehicle-item .form-group:nth-child(1) {
+  width: 170px;
+}
+.registration__item.vehicle-item .form-group:nth-child(2) {
+  width: 170px;
+}
+.registration__item.vehicle-item .form-group:nth-child(3) {
+  width: 180px;
+}
+.registration__item.vehicle-item .form-group:nth-child(4) {
+  width: 140px;
+}
+.registration__item.vehicle-item .form-group:nth-child(5) {
+  width: 140px;
+}
+.registration__item.vehicle-item .form-group:nth-child(6) {
+  width: 230px;
+}
+.registration__item__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+}
+.registration__item__title span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.registration__caption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.registration__caption li {
+  color: rgba(34, 34, 34, 0.6);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 50px;
+}
+.registration__caption li.active {
+  color: #2F80ED;
+}
+.registration .period-caption {
+  display: flex;
+  align-items: center;
+}
+.registration .period-caption .period-date {
+  font-size: 22px;
+  margin-left: 25px;
+}
+.registration .period-caption .period-date span {
+  color: #2F80ED;
+}
+.registration .paid-item {
+  display: flex;
+  align-items: center;
+}
+.registration .paid-item .custom-checkbox {
+  padding: 0 20px;
+  width: 45%;
+}
+.registration .paid-item label {
+  display: flex;
+  align-items: center;
+}
+.registration .paid-item .pricing-date-col {
+  text-align: center;
+  width: 25%;
+}
+.registration .paid-item .pricing-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.registration .paid-item .total__pricing-qual {
+  margin-bottom: 15px;
+}
+.registration .paid-item .pricing-button-col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30px;
+  width: 30%;
+}
+.registration .paid-item .pricing-button-col p {
+  color: #7D8184;
+  margin-top: 10px;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content.active {
+  display: block;
+}
+
+.hint-txt {
+  margin: 15px 0 0;
+}
+
+.hint-txt-mob {
+  display: none;
 }
 
 .total__transport__label,
@@ -2549,7 +2830,7 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   padding: 6px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .rashet__choice-item {
     margin-left: 5px;
     margin-right: 5px;
@@ -2681,6 +2962,63 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   .accordion-item__form-btn {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .policy-tourist .result__table-inner, .policy-registration .result__table-inner {
+    flex-wrap: wrap;
+  }
+  .policy-tourist .result__table-col,
+  .policy-registration .result__table-col {
+    margin-right: 0;
+    width: 100%;
+  }
+  .policy-tourist .result__table-inner .form-callback, .policy-registration .result__table-inner .form-callback {
+    max-width: 100%;
+  }
+  .registration__item form {
+    flex-wrap: wrap;
+  }
+  .registration__item .form-row {
+    flex-wrap: wrap;
+  }
+  .registration__item .form-row + .form-row {
+    margin-top: 15px;
+  }
+  .registration__item.personal-item .form-group {
+    width: 345px;
+  }
+  .registration__caption {
+    flex-wrap: wrap;
+  }
+  .registration .tabs__caption {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .registration__caption li {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  .registration__item.address-item .form-group:nth-child(1),
+  .registration__item.address-item .form-group:nth-child(2),
+  .registration__item.address-item .form-group:nth-child(3),
+  .registration__item.address-item .form-group:nth-child(4) {
+    width: 345px;
+  }
+  .registration__item.address-item .form-group {
+    margin-bottom: 15px;
+  }
+  .registration__item.vehicle-item .form-group:nth-child(1),
+  .registration__item.vehicle-item .form-group:nth-child(2),
+  .registration__item.vehicle-item .form-group:nth-child(3),
+  .registration__item.vehicle-item .form-group:nth-child(4),
+  .registration__item.vehicle-item .form-group:nth-child(5),
+  .registration__item.vehicle-item .form-group:nth-child(6) {
+    width: 345px;
+  }
+  .registration__item.vehicle-item .form-group {
+    margin-bottom: 15px;
+  }
+  .policy-tourist .tourist-col {
+    width: calc(33% - 15px);
   }
 }
 @media (max-width: 1050px) {
@@ -2861,10 +3199,10 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   }
   .insurance {
     margin-top: 0;
+    margin-bottom: 75px;
   }
   .insurance__items {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    margin-bottom: 75px;
   }
   .insurance__item {
     padding: 35px 20px;
@@ -2922,6 +3260,122 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   .modal-buy-item-col {
     padding: 0;
   }
+  .registration__items {
+    margin: 0 0 50px;
+  }
+  .policy-tourist .result__table-inner .form-callback p, .policy-registration .result__table-inner .form-callback p {
+    padding: 0;
+  }
+  .registration__item .form-group {
+    margin: 0;
+  }
+  .registration__item .form-group + .form-group {
+    margin: 15px 0 0;
+  }
+  .registration__item.contact-item .form-group:nth-child(1),
+  .registration__item.contact-item .form-group:nth-child(2) {
+    width: 100%;
+  }
+  .registration__item .form-row,
+  .registration__item.personal-item .form-group {
+    width: 100%;
+  }
+  .registration__item.document-item .form-group:nth-child(1),
+  .registration__item.document-item .form-group:nth-child(2),
+  .registration__item.document-item .form-group:nth-child(3),
+  .registration__item.document-item .form-group:nth-child(4) {
+    width: 100%;
+  }
+  .registration__caption li {
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  .registration__item.address-item .form-group:nth-child(1),
+  .registration__item.address-item .form-group:nth-child(2),
+  .registration__item.address-item .form-group:nth-child(3),
+  .registration__item.address-item .form-group:nth-child(4) {
+    width: 100%;
+  }
+  .registration__item.address-item .form-group {
+    margin-bottom: 0;
+  }
+  .registration__caption {
+    margin-bottom: 20px;
+  }
+  .hint-txt {
+    display: none;
+  }
+  .hint-txt-mob {
+    display: block;
+    margin: 0 0 15px;
+    width: 100%;
+  }
+  .registration__item.vehicle-item .form-group:nth-child(1),
+  .registration__item.vehicle-item .form-group:nth-child(2),
+  .registration__item.vehicle-item .form-group:nth-child(3),
+  .registration__item.vehicle-item .form-group:nth-child(4),
+  .registration__item.vehicle-item .form-group:nth-child(5),
+  .registration__item.vehicle-item .form-group:nth-child(6) {
+    width: 100%;
+  }
+  .registration__item.vehicle-item .form-group {
+    margin-bottom: 0;
+  }
+  .registration .paid-item {
+    flex-wrap: wrap;
+  }
+  .registration .paid-item .custom-checkbox,
+  .registration .paid-item .pricing-date-col,
+  .registration .paid-item .pricing-button-col {
+    width: 100%;
+    padding: 0;
+  }
+  .registration .paid-item .pricing-date-col,
+  .registration .paid-item .pricing-button-col {
+    margin-top: 25px;
+  }
+  .policy-tourist .tourist-first-item {
+    flex-wrap: wrap;
+  }
+  .policy-tourist .tourist-col {
+    width: 100%;
+  }
+  .policy-tourist .tourist-col + .tourist-col {
+    margin-top: 40px;
+  }
+  .policy-tourist .result__table-block {
+    padding: 20px 20px 30px;
+  }
+  .policy-tourist .tourist-col .hint-txt-mob {
+    margin: 10px 0 0;
+  }
+  .policy-tourist .total__pricing {
+    justify-content: center;
+  }
+  .policy-tourist .total__choice {
+    width: 100%;
+  }
+  .policy-tourist .total__choice-item span {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .result__table-inner .form-callback {
+    flex-wrap: wrap;
+  }
+  .result__table-inner .form-callback p {
+    padding: 0 0 25px;
+    font-size: 17px;
+  }
+  .result__table-inner .form-callback form {
+    width: 100%;
+  }
+  .result__table-inner .form-callback .form-group {
+    width: 100%;
+  }
+  .result__table-inner .form-callback input {
+    width: 100%;
+  }
 }
 @media (max-width: 750px) {
   .accordion-item__icon {
@@ -2932,6 +3386,9 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   .accordion-item__title {
     padding-right: 70px;
     font-weight: 400;
+  }
+  .registration__quality {
+    font-size: 26px;
   }
 }
 @media (max-width: 650px) {
@@ -3041,6 +3498,13 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1), .footer-block span {
   .modal-edit .checkbox-group-row {
     border-bottom: 0;
     margin-bottom: 0;
+  }
+  .registration .period-caption {
+    flex-wrap: wrap;
+  }
+  .registration .period-caption .period-date {
+    margin: 15px 0 0;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
