@@ -14,37 +14,37 @@ $(function () {
     $('.intro2').addClass('active');
     $('.intro3').addClass('active');
     $('.intro').removeClass('h_active');
-    $('.intro').removeClass('b_active');
+    // $('.intro').removeClass('b_active');
   });
   $('.tab2').on('click', function () {
     $('.intro2').removeClass('active');
     $('.intro').addClass('active');
     $('.intro3').addClass('active');
     $('.intro').removeClass('h_active');
-    $('.intro').removeClass('b_active');
+    // $('.intro').removeClass('b_active');
   });
   $('.tab3').on('click', function () {
     $('.intro3').removeClass('active');
     $('.intro2').addClass('active');
     $('.intro').addClass('active');
     $('.intro').removeClass('h_active');
-    $('.intro').removeClass('b_active');
+    // $('.intro').removeClass('b_active');
   });
   $('.tab4').on('click', function () {
     $('.intro').addClass('h_active');
-    $('body').addClass('b_active');
+    // $('body').addClass('b_active');
   });
   $('.tab5').on('click', function () {
     $('.intro').addClass('h_active');
-    $('body').addClass('b_active');
+    // $('body').addClass('b_active');
   });
   $('.tab6').on('click', function () {
     $('.intro').addClass('h_active');
-    $('body').addClass('b_active');
+    // $('body').addClass('b_active');
   });
   $('.tab7').on('click', function () {
     $('.intro').addClass('h_active');
-    $('body').addClass('b_active');
+    // $('body').addClass('b_active');
   });
 
   $('.search--right__item').on('click', function (event) {
