@@ -555,6 +555,55 @@
   .result__table-inner .form-callback input {
     width: 100%;
   }
+  .services .accordion-item__paragraph .table {
+    display: none;
+  }
+  .services .accordion-item__paragraph .table_mobile {
+    display: block;
+  }
+  .services .accordion-item__paragraph .table .th {
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabs{
+    justify-content: unset;
+    width: 420px;
+  }
+  .tab{
+    padding: 15px 13px;
+    &:first-child{
+      display: block;
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      min-width: 140px;
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
+      min-width: 125px;
+    }
+  }
+  .tabs-wrapper{
+    overflow: auto;
+  }
+  .more-wrap {
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    .link {
+      color: #2F80ED;
+      width: 100%;
+      &+.link {
+        margin-top: 60px;
+      }
+    }
+  }
 }
 @media (max-width: 750px){
   .accordion-item__icon {
@@ -571,20 +620,6 @@
   }
 }
 @media (max-width: 650px){
-  .tabs{
-    justify-content: unset;
-    width: 420px;
-  }
-  .tab{
-    width: 140px;
-    padding: 15px 13px;
-    &:first-child{
-      display: block;
-    }
-  }
-  .tabs-wrapper{
-    overflow: auto;
-  }
   .btn-wrap {
     flex-wrap: wrap;
   }
@@ -681,6 +716,12 @@
   .registration .period-caption .period-date {
     margin: 15px 0 0;
     width: 100%;
+  }
+  .tab_content{
+    .faq__inner {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 @media (max-width: 480px){

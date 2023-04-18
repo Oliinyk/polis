@@ -54,6 +54,7 @@
 }
 .tab-item{
   display: none;
+  background-color: #fff;
   &.active-tab{
     display: block;
   }
@@ -63,20 +64,38 @@
   justify-content: space-between;
 }
 .tab{
-  width: 33.333333%;
   padding: 30px 15px 28px;
   background: #FFFFFF;
   box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1);
   border-radius: 6px 6px 0px 0px;
-  font-size: 28px;
+  font-size: 22px;
   border-left: 1px solid rgba(0, 0, 0, .1);
   line-height: 28px;
   color: #A4A4A4;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   cursor: pointer;
   transition: all .3s;
+  text-align: center;
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    min-width: 16%;
+  }
+  &:nth-child(4),
+  &:nth-child(5) {
+    min-width: 12%;
+  }
+  &:nth-child(6) {
+    min-width: 11%;
+    flex-wrap: nowrap;
+  }
+  &:nth-child(7) {
+    min-width: 17%;
+    flex-wrap: nowrap;
+  }
   &.active{
     color: #488FE1;
     font-weight: 700;
@@ -85,12 +104,18 @@
     border-left: 0 solid transparent;
   }
   &:first-child{
+    span{
+      width: 100%;
+    }
     &.active{
       font-weight: 400;
       span{
         font-weight: 700;
       }
     }
+  }
+  svg {
+    margin-left: 8px;
   }
 }
 .tab-item__search{
@@ -2610,6 +2635,65 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1) {
   justify-content: center;
   align-items: center;
   padding: 6px;
+}
+.services .accordion-item__paragraph p, ul {
+  margin: 0 0 10px;
+}
+.services .accordion-item--opened .accordion-item__inner {
+  max-height: 9999px;
+}
+.services .accordion-item__paragraph .table {
+  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px;
+  width: 100%;
+}
+.services .accordion-item__paragraph .table .t-row {
+  display: flex;
+  width: 100%;
+}
+.services .middle-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .accordion-item__paragraph .table .t-row > div {
+  width: 25%;
+  border: 1px solid #000;
+  text-align: center;
+}
+.services .accordion-item__paragraph .table .t-row > div {
+  width: 25%;
+  border: 1px solid #000;
+  text-align: center;
+}
+.services .accordion-item__paragraph .table .b-bottom {
+  border-bottom: 2px solid #000;
+}
+.services .accordion-item__paragraph .table p {
+  margin: 0;
+  padding: 5px;
+}
+.services .accordion-item__paragraph .table .m-height p {
+  min-height: 80px;
+}
+.services .accordion-item__paragraph .table_mobile .t-row > div {
+  width: 50%;
+  border: 1px solid #000;
+}
+.services .accordion-item__paragraph ul li {
+  display: block;
+}
+.more-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+  .link {
+    font-weight: 600;
+    font-size: 22px;
+  }
 }
 
 @import 'media';

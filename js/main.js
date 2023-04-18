@@ -38,6 +38,14 @@ $(function () {
     $('.intro').addClass('h_active');
     $('body').addClass('b_active');
   });
+  $('.tab6').on('click', function () {
+    $('.intro').addClass('h_active');
+    $('body').addClass('b_active');
+  });
+  $('.tab7').on('click', function () {
+    $('.intro').addClass('h_active');
+    $('body').addClass('b_active');
+  });
 
   $('.search--right__item').on('click', function (event) {
     var id = $(this).attr('data-id');

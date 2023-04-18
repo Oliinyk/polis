@@ -120,6 +120,7 @@ p {
 
 .tab-item {
   display: none;
+  background-color: #fff;
 }
 .tab-item.active-tab {
   display: block;
@@ -131,20 +132,35 @@ p {
 }
 
 .tab {
-  width: 33.333333%;
   padding: 30px 15px 28px;
   background: #FFFFFF;
   box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1);
   border-radius: 6px 6px 0px 0px;
-  font-size: 28px;
+  font-size: 22px;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   line-height: 28px;
   color: #A4A4A4;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   cursor: pointer;
   transition: all 0.3s;
+  text-align: center;
+}
+.tab:nth-child(1), .tab:nth-child(2), .tab:nth-child(3) {
+  min-width: 16%;
+}
+.tab:nth-child(4), .tab:nth-child(5) {
+  min-width: 12%;
+}
+.tab:nth-child(6) {
+  min-width: 11%;
+  flex-wrap: nowrap;
+}
+.tab:nth-child(7) {
+  min-width: 17%;
+  flex-wrap: nowrap;
 }
 .tab.active {
   color: #488FE1;
@@ -153,11 +169,17 @@ p {
   box-shadow: none;
   border-left: 0 solid transparent;
 }
+.tab:first-child span {
+  width: 100%;
+}
 .tab:first-child.active {
   font-weight: 400;
 }
 .tab:first-child.active span {
   font-weight: 700;
+}
+.tab svg {
+  margin-left: 8px;
 }
 
 .tab-item__search {
@@ -2832,6 +2854,78 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1) {
   padding: 6px;
 }
 
+.services .accordion-item__paragraph p, ul {
+  margin: 0 0 10px;
+}
+
+.services .accordion-item--opened .accordion-item__inner {
+  max-height: 9999px;
+}
+
+.services .accordion-item__paragraph .table {
+  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+.services .accordion-item__paragraph .table .t-row {
+  display: flex;
+  width: 100%;
+}
+
+.services .middle-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .accordion-item__paragraph .table .t-row > div {
+  width: 25%;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.services .accordion-item__paragraph .table .t-row > div {
+  width: 25%;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.services .accordion-item__paragraph .table .b-bottom {
+  border-bottom: 2px solid #000;
+}
+
+.services .accordion-item__paragraph .table p {
+  margin: 0;
+  padding: 5px;
+}
+
+.services .accordion-item__paragraph .table .m-height p {
+  min-height: 80px;
+}
+
+.services .accordion-item__paragraph .table_mobile .t-row > div {
+  width: 50%;
+  border: 1px solid #000;
+}
+
+.services .accordion-item__paragraph ul li {
+  display: block;
+}
+
+.more-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+}
+.more-wrap .link {
+  font-weight: 600;
+  font-size: 22px;
+}
+
 @media (max-width: 1199px) {
   .rashet__choice-item {
     margin-left: 5px;
@@ -3381,6 +3475,50 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1) {
   .result__table-inner .form-callback input {
     width: 100%;
   }
+  .services .accordion-item__paragraph .table {
+    display: none;
+  }
+  .services .accordion-item__paragraph .table_mobile {
+    display: block;
+  }
+  .services .accordion-item__paragraph .table .th {
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabs {
+    justify-content: unset;
+    width: 420px;
+  }
+  .tab {
+    padding: 15px 13px;
+  }
+  .tab:first-child {
+    display: block;
+  }
+  .tab:nth-child(1), .tab:nth-child(2), .tab:nth-child(3) {
+    min-width: 140px;
+  }
+  .tab:nth-child(4), .tab:nth-child(5), .tab:nth-child(6), .tab:nth-child(7) {
+    min-width: 125px;
+  }
+  .tabs-wrapper {
+    overflow: auto;
+  }
+  .more-wrap {
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+  }
+  .more-wrap .link {
+    color: #2F80ED;
+    width: 100%;
+  }
+  .more-wrap .link + .link {
+    margin-top: 60px;
+  }
 }
 @media (max-width: 750px) {
   .accordion-item__icon {
@@ -3397,20 +3535,6 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1) {
   }
 }
 @media (max-width: 650px) {
-  .tabs {
-    justify-content: unset;
-    width: 420px;
-  }
-  .tab {
-    width: 140px;
-    padding: 15px 13px;
-  }
-  .tab:first-child {
-    display: block;
-  }
-  .tabs-wrapper {
-    overflow: auto;
-  }
   .btn-wrap {
     flex-wrap: wrap;
   }
@@ -3507,6 +3631,10 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1) {
   .registration .period-caption .period-date {
     margin: 15px 0 0;
     width: 100%;
+  }
+  .tab_content .faq__inner {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 480px) {
