@@ -222,7 +222,7 @@
 
   <!-- tooltip -->
   <div class="better-price">
-    <button type="button" class="better-price-ico">
+    <button type="button" class="better-price-ico betterBtnJs">
       <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_5551_1395)">
           <path d="M42 3L47.8681 7.39276L55.0156 5.76655L58.5897 12.1663L65.7806 13.5878L66.4427 20.888L72.4338 25.1115L70.0694 32.0498L73.8247 38.3449L68.8426 43.7217L69.7128 51L62.9745 53.8855L60.8091 60.8885L53.4797 60.7839L48.6532 66.3007L42 63.224L35.3468 66.3007L30.5203 60.7839L23.1909 60.8885L21.0255 53.8855L14.2872 51L15.1574 43.7217L10.1753 38.3449L13.9306 32.0498L11.5662 25.1115L17.5573 20.888L18.2194 13.5878L25.4103 12.1663L28.9844 5.76655L36.1319 7.39276L42 3Z" fill="#F64F4F"/>
@@ -233,6 +233,47 @@
     </button>
     <div class="tooltip">Краща ціна</div>
   </div>
+
+  <!-- better-price modal -->
+	<div class="modal-wrap betterModalWrapJs">
+		<div class="modal-better modal-main betterModalJs">
+      <button type="button" class="modal__close-btn closeBtnJs">
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L40 40" stroke="black" stroke-width="2" stroke-linecap="round"/>
+          <path d="M40 1L1 40" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="modal-title">
+        <h3 class="modal__title">Гарантія найпривабливіших цін</h3>
+      </div>
+      <div class="accordion-item__paragraph">
+        <p>Ми постійно моніторимо ринок та встановлюємо справедливу ціну!</p>
+        <p>Проте, якщи Ви знайшли ціну нижче - ми змінимо її для Вас!</p>
+        <p>Для цього скорестайтеся формою нижче або надішліть, повідомлення <i class="highlight">"Я знайшов дешевше"</i> зручним для Вас способом:Електронною поштою, або за допомогою <a href="#" class="bold">Viber</a>, і вкажіть такі дані:</p>
+        <ul class="accordion-item__list">
+            <li>своє ім'я</li>
+            <li>номер телефону</li>
+            <li>посилання на страховий продукт на нашому сервісі</li>
+            <li>посилання на страховий продукт, де Ви знайшли дешевше</li>
+        </ul>
+        <form class="accordion-item__form">
+            <input type="text" placeholder="Іван" class="accordion-item__form-input">                                                
+            <input type="text" placeholder="+38" class="accordion-item__form-input">                                                
+            <input type="text" placeholder="http://" class="accordion-item__form-input">                                                
+            <input type="text" placeholder="http://" class="accordion-item__form-input">                                                
+            <button type="submit" class="accordion-item__form-btn">Відправити</button>
+        </form>
+        <p class="bold">Якщо, страховий продукт, дійсно, коштує дешевше, то ми оформим Вам поліс за найкращою ціною для Вас!</p>
+        <div class="accordion-item__contact">
+            <p class="accordion-item__contac-title">Контакти:</p>
+            <p class="accordion-item__contac-item"><a href="tel:+38(067)1954588">+38(067)1954588</a> Viber</p> 
+            <p class="accordion-item__contac-item"><a href="tel:+38(097)9757434">+38(097)9757434</a> Viber</p> 
+            <p><a href="mailto:evg.yanov@gmail.com" class="accordion-item__contac-item">evg.yanov@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+	</div>
+  <div class="modal-bg modalBgBetterJs"></div>
 
   <!-- call navigation -->
   <div class="call-nav">

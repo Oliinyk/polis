@@ -2130,6 +2130,18 @@ footer > div > div:nth-child(2) > ul > li:nth-child(1) {
     cursor: pointer;
   }
 }
+// modal-better
+.modal-better {
+  max-width: 1240px;
+  padding: 40px 28px 40px;
+}
+.modal-better .modal__title {
+  text-align: left;
+  line-height: 1.2;
+  margin: 0 0 40px;
+  font-size: 22px;
+  padding-right: 45px;
+}
 // modal-buy
 .modal-buy {
   max-width: 1240px;

@@ -183,12 +183,26 @@ $(function () {
     $('body').find('.modalBgBuyJs').addClass('active');
     $('body').find('.buyModalWrapJs').addClass('active');
   });
-  // close edit modal
+  // close buy modal
   $(document).mouseup(function (e){
     var buyModalJs = $(".buyModalJs");
     if (!buyModalJs.is(e.target) && buyModalJs.has(e.target).length === 0) {
       $('body').find('.modalBgBuyJs').removeClass('active');
       $('body').find('.buyModalWrapJs').removeClass('active');
+    }
+  });
+
+  // better price modal
+  $('body').on('click', '.betterBtnJs', function(){
+    $('body').find('.modalBgBetterJs').addClass('active');
+    $('body').find('.betterModalWrapJs').addClass('active');
+  });
+  // close better price modal
+  $(document).mouseup(function (e){
+    var betterModalJs = $(".betterModalJs");
+    if (!betterModalJs.is(e.target) && betterModalJs.has(e.target).length === 0) {
+      $('body').find('.modalBgBetterJs').removeClass('active');
+      $('body').find('.betterModalWrapJs').removeClass('active');
     }
   });
   

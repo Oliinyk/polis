@@ -604,6 +604,29 @@
       }
     }
   }
+  .modal-better .modal__title {
+    font-size: 20px;
+    margin: 0 0 25px;
+  }
+  .modal-better .accordion-item__paragraph {
+    padding-bottom: 0;
+  }
+  .accordion-item__form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .accordion-item__form-input {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .accordion-item__form-btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .accordion-item__form {
+    margin: 0 0 25px;
+  }
 }
 @media (max-width: 750px){
   .accordion-item__icon {
